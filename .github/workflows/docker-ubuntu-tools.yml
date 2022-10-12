@@ -34,5 +34,5 @@ jobs:
         with:
           push: true
           context: ./docker
-          file: ./Dockerfile.tools
+          file: ./docker/Dockerfile.tools
           tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
