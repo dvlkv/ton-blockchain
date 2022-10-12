@@ -20,7 +20,5 @@ RUN apt-get update && \
 
 COPY --from=builder /ton/build/crypto/func /usr/local/bin/
 COPY --from=builder /ton/build/crypto/fift /usr/local/bin/
-COPY --from=builder /ton/build/validator-engine-console/lite-client /usr/local/bin/
-COPY --from=builder /ton/build/utils/generate-random-id /usr/local/bin/
 
 ENTRYPOINT ["/bin/bash"]
